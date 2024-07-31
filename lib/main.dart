@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'pages/home_page.dart';
 
@@ -10,8 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    
     // double pi = 3.14;
     // bool isMail = true;
     // num temp = 30.5;
@@ -21,10 +20,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.teal),
-      darkTheme: ThemeData(brightness: Brightness.dark
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
-      initialRoute: "/home",
+
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
         "/home": (context) => HomePage(),
@@ -33,4 +35,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
