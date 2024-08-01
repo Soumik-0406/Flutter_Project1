@@ -9,13 +9,20 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog App"),
-      ),
-        body: Center(
-          child: Container(
-            child: Text("Welcome to $days days of Flutter by $name"),
-          ),
+        // ignore: prefer_const_constructors
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
         ),
-        drawer: Drawer(),
-      );
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
+      body: Center(
+        child: Container(
+          child: Text("Welcome to $days days of Flutter by $name"),
+        ),
+      ),
+      drawer: Drawer(),
+    );
   }
 }
