@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:project_1/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog App"),
+        iconTheme: IconThemeData(color: Colors.white),
         // ignore: prefer_const_constructors
         titleTextStyle: TextStyle(
           color: Colors.white,
